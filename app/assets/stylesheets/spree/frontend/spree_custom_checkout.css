@@ -1,0 +1,44 @@
+.disabled-step {
+  opacity: .5;
+}
+
+#login legend,
+#guest_login legend {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  color: #00adee;
+  padding: 5px;
+  margin-left: 15px;
+}
+
+
+#login input[type="email"],
+#login input[type="password"],
+#guest_login input[type="email"]{
+  width: 100%;
+}
+
+#registration{
+  margin-top: 9px;
+}
+
+
+@media (min-width:1200px) {
+  #checkout-summary .affix {
+    width: 262.5px;
+    top: 18px;
+  }
+}
+@media (max-width:1199px) and (min-width:993px) {
+  #checkout-summary .affix {
+    width: 212.5px;
+    top: 18px;
+  }
+}
+@media (max-width:992px){
+  #checkout-summary .affix {
+    position: static;
+    /*top: auto;*/
+  }
+}
