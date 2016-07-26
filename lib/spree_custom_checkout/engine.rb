@@ -1,4 +1,4 @@
-module SpreeOnePageCheckout
+module SpreeCustomCheckout
   class Engine < Rails::Engine
     require 'spree/core'
     isolate_namespace Spree

@@ -1,4 +1,4 @@
-module SpreeOnePageCheckout
+module SpreeCustomCheckout
   module Generators
     class InstallGenerator < Rails::Generators::Base
 
