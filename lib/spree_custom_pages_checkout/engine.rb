@@ -1,8 +1,8 @@
-module SpreeCustomCheckout
+module SpreeCustomPagesCheckout
   class Engine < Rails::Engine
     require 'spree/core'
     isolate_namespace Spree
-    engine_name 'spree_custom_checkout'
+    engine_name 'spree_custom_pages_checkout'
 
     # use rspec for tests
     config.generators do |g|

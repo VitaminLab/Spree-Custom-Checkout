@@ -2,7 +2,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_custom_checkout'
-  s.version     = '1.0.2'
+  s.version     = '1.0.6'
   s.summary     = 'One page checkout with Spree'
   s.description = 'Implement a custom checkout with Spree. The goal here is to merge guest signup, address and delivery on the same page.'
   s.required_ruby_version = '>= 1.9.3'
@@ -10,6 +10,8 @@ Gem::Specification.new do |s|
   s.author    = 'Yad F'
   s.email     = 'yad.faeq@gmail.com'
   s.homepage     = 'https://github.com/0bserver07/Spree-Custom-Checkout'
+  s.licenses = ["MIT"]
+  s.requirements = ["none"]
 
 
   s.require_path = 'lib'
