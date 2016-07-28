@@ -57,9 +57,3 @@ Spree::Order.class_eval do
 end
 ```
 
-Then to avoid user signup up until the Address Page include the following snippt:
-
-```
-
-
-```
