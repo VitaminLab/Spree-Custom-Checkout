@@ -1,4 +1,4 @@
-Spree Custome Checkout
+Spree Custom Checkout
 ====================
 
 This is a custom checkout flow to merge:
@@ -22,17 +22,17 @@ The structure of `Spree` views remains in the same manner, with a pair of execci
 Installation
 ------------
 
-Add spree_custom_pages_checkout to your Gemfile:
+Add spree_custom_checkout to your Gemfile:
 
 ```ruby
-gem 'spree_custom_pages_checkout'
+gem 'spree_custom_checkout'
 ```
 
 Bundle your dependencies and run the installation generator:
 
 ```shell
 bundle
-bundle exec rails g spree_custom_pages_checkout:install
+bundle exec rails g spree_custom_checkout:install
 ```
 
 Side Note:
