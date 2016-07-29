@@ -25,7 +25,7 @@ Installation
 Add spree_custom_checkout to your Gemfile:
 
 ```ruby
-gem 'spree_custom_checkout'
+gem 'spree_custom_checkout', github: '0bserver07/Spree-Custom-Checkout'
 ```
 
 Bundle your dependencies and run the installation generator:
