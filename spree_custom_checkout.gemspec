@@ -2,7 +2,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_custom_checkout'
-  s.version     = '4.0.0'
+  s.version     = '4.0.1'
   s.summary     = 'One page checkout with Spree'
   s.description = 'Implement a custom checkout with Spree. The goal here is to merge guest signup, address and delivery on the same page.'
   s.required_ruby_version = '>= 2.3.0'
