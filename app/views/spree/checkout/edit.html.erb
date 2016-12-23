@@ -12,13 +12,6 @@
             <%= render :partial => 'spree/checkout/form_wrapper', :locals => { :order => @order, :state => 'confirm' } %>
           </div>
       </div>
-
-    <% elsif @order.state == 'payment' %>
-      <div class="col-sm-12">
-        <div class="checkout_content <%= 'disabled-step' if @order.state!='payment' or in_registration_step? %>" data-step="payment" data-hook="checkout_content" id="checkout_confirm">
-            <%= render :partial => 'spree/checkout/form_wrapper', :locals => { :order => @order, :state => 'payment' } %>
-          </div>
-      </div>
     <% else %>
       <div class="row">
         <div class="col-md-9">
@@ -29,7 +22,7 @@
           <% end %>
 
           <% @order.checkout_steps[0...-1].each do |state| %>
-            <% next if state == 'confirm' or state == 'payment'  %>
+            <% next if state == 'confirm' %>
             <div class="checkout_content <%= 'disabled-step' if state != @order.state or in_registration_step? %>" data-step="<%= state %>" data-hook="checkout_content" id="checkout_<%= state %>">
               <%= render :partial => 'spree/checkout/form_wrapper', :locals => { :order => @order, :state => state } %>
             </div>
