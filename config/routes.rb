@@ -7,7 +7,9 @@
 #   end
 # end
 Spree::Core::Engine.routes.prepend do
-  namespace :api do
-    resources :complete_orders
+  namespace :api, defaults: { format: 'json' } do
+      namespace :v1 do
+        resources :complete_orders
+      end 
   end
 end
