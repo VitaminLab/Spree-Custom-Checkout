@@ -7,9 +7,9 @@ Gem::Specification.new do |s|
   s.description = 'Implement a custom checkout with Spree. The goal here is to merge guest signup, address and delivery on the same page.'
   s.required_ruby_version = '>= 2.3.0'
 
-  s.author    = 'Yad F'
-  s.email     = 'yad.faeq@gmail.com'
-  s.homepage     = 'https://github.com/0bserver07/Spree-Custom-Checkout'
+  s.author    = 'Yaniv Ran'
+  s.email     = 'yaniv.ran@gmail.com'
+  s.homepage     = 'https://github.com/YanivRan/Spree-Custom-Checkout'
   s.licenses = ["MIT"]
   s.requirements = ["none"]
 
