@@ -1,15 +1,13 @@
-# Rails.application.routes.draw do
-#   mount Spree::Core::Engine, :at => '/'
-#   namespace :spree do
-#     namespace :api, defaults: { format: 'json' } do
-#       resources :complete_orders
-#     end
-#   end
-# end
-Spree::Core::Engine.routes.prepend do
-  namespace :api, defaults: { format: 'json' } do
-      namespace :v1 do
-        resources :complete_orders
-      end 
+Rails.application.routes.draw do
+  routes = lambda do
+    namespace :admin do
+      resources :complete_orders
+    end
+  end 
+
+  if Spree::Core::Engine.respond_to?(:add_routes)
+    Spree::Core::Engine.add_routes(&routes)
+  else
+    Spree::Core::Engine.routes.draw(&routes)
   end
 end
