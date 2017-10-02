@@ -2,6 +2,8 @@ module Spree
   module Api
     module v1 
       class CompleteOrdersController < Spree::Api::BaseController
+
+        skip_before_action :authenticate_user
        
 
         def create
@@ -78,7 +80,9 @@ module Spree
           params[:order][:bill_address_attributes] = params[:order].delete(:bill_address) if params[:order][:bill_address]
         end
 
-
+        def order_id
+          super || params[:id]
+        end
 
       end
     end 
