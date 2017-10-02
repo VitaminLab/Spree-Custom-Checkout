@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   routes = lambda do
-    namespace :admin do
-      resources :complete_orders
+    namespace :api do
+      namespace :v1 do 
+        resources :complete_orders, only: (:show, :create)
+      end
     end
   end 
 
