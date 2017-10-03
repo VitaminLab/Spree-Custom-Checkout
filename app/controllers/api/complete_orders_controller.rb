@@ -1,6 +1,6 @@
 module Spree
   module Api
-    module v1 
+    module V1 
       class CompleteOrdersController < Spree::Api::BaseController
 
         skip_before_action :authenticate_user
